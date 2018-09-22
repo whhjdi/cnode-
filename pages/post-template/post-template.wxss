@@ -1,0 +1,68 @@
+/* pages/post-template/post-template.wxss */
+
+.scroll-posts-list {
+  margin-top: 80rpx;
+}
+
+.wrapper {
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* 右侧头像 */
+
+.author {
+  padding: 20rpx 0;
+  margin-right: 40rpx;
+}
+
+.avatar {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 30rpx;
+}
+
+.login-name {
+  width: 120rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  background: #f0f4f8;
+  font-size: 20rpx;
+  padding: 5rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 左侧内容 */
+
+.content {
+  margin: 0 20rpx 0 40rpx;
+  text-align: left;
+  overflow: hidden;
+}
+.title{
+  font-size: 34rpx;
+  line-height: 38rpx;
+}
+.category{
+  width: 60rpx;
+  background: #3F98F6;
+  border-radius: 10rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 24rpx;
+}
+.extra {
+  margin-top: 10rpx;
+}
+
+.extra>text {
+  font-size: 20rpx;
+  margin-right: 10rpx;
+  color: #99aab7;
+}

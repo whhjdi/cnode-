@@ -1,0 +1,12 @@
+<!--pages/top-bar-template/top-bar-template.wxml-->
+<template name="nav">
+  <view class='top-bar' catchtap='onTapPost'>
+    <block wx:for="{{navList}}" wx:key="">
+      <view class='nav-item' id='{{item.id}}' data-index="{{index}}"
+      class="nav-item {{index == activeIndex ? 'nav-item-active' : ''}}"
+      catchtap="onTapItem">
+        <text>{{item.title}}</text>
+      </view>
+    </block>
+  </view>
+</template>

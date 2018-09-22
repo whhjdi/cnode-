@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/topics/topics",
+    "pages/post-template/post-template",
+    "pages/index/index",
+    "pages/top-bar-template/top-bar-template",
+    "pages/post-detail/post-detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "cnode社区",
+    "navigationBarTextStyle": "black"
+  }
+}

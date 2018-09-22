@@ -1,0 +1,6 @@
+@import '../post-template/post-template.wxss';
+@import '../top-bar-template/top-bar-template.wxss';
+.topics-container{
+  height: 100%;
+  overflow: hidden;
+}

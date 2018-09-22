@@ -1,0 +1,8 @@
+<!--pages/topics/topics.wxml-->
+<import src='../post-template/post-template.wxml'/>
+<import src='../top-bar-template/top-bar-template.wxml'/>
+
+<view class='topics-container'>
+  <template is='nav' data='{{navList,activeIndex}}'></template>
+  <template is='list' data='{{postList}}'></template>
+</view>

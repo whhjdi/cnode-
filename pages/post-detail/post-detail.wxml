@@ -1,0 +1,42 @@
+<!--pages/post-detail/post-detail.wxml-->
+<view class='detail-container'>
+  <view class='title'>
+    <text>{{postDetail.title}}</text>
+  </view>
+  <view class='author'>
+    <view class='left-wrapper'>
+      <image src='{{postDetail.author.avatar_url}}' class='avatar'></image>
+      <view class='extra'>
+        <view class="login-name">
+          <text>{{postDetail.author.loginname}}</text>
+        </view>
+        <text>{{postDetail.visit_count}}访问</text>
+        <text>{{postDetail.reply_count}}回复</text>
+      </view>
+    </view>
+    <view>
+      <image wx:if="{{isCollected}}" class="collect" catchtap='onTapCollect' src="/images/collected.png"></image>
+      <image wx:else catchtap='onTapCollect' class="collect" src="/images/uncollected.png"></image>
+    </view>
+  </view>
+  <view class='content'>
+    <rich-text nodes="{{postDetail.content}}"></rich-text>
+  </view>
+  <view class='comment'>
+    <text>评论</text>
+    <view wx:if="{{postDetail.replies.length===0}}" class='reply-none'> 暂无</view>
+    <view wx:wlse>
+      <block wx:for="{{postDetail.replies}}" wx:key="">
+        <view class='comment-wrapper'>
+          <view class='avatar-wrapper'>
+            <image src='{{item.author.avatar_url}}' class='comment-avatar' style='width:60rpx;height:60rpx;'></image>
+            <text>{{item.author.loginname}}</text>
+          </view>
+          <view class='comment-content'>
+            <rich-text nodes="{{item.content}}"></rich-text>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>
